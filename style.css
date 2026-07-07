@@ -1,39 +1,158 @@
-body {
+/* ---------- Grundeinstellungen ---------- */
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    min-height: 70vh;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0F172A;
+    color: white;
+    line-height: 1.7;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 12%;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 10%;
+
+    position: fixed;
+    width: 100%;
+
+    background: rgba(15,23,42,0.90);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38BDF8;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10%;
+}
+
+.hero-content {
+
+    max-width: 850px;
+
+}
+
+.eyebrow {
+
+    color: #38BDF8;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
 }
 
 h1 {
-    font-size: 64px;
-    margin: 0;
+
+    font-size: 60px;
+
+    line-height: 1.15;
+
+    margin-bottom: 35px;
+
 }
 
-header p {
-    font-size: 22px;
-    color: #cbd5e1;
+.intro {
+
+    color: #CBD5E1;
+
+    font-size: 21px;
+
+    margin-bottom: 45px;
+
 }
 
-main {
-    padding: 60px 12%;
-    max-width: 900px;
+/* ---------- Buttons ---------- */
+
+.buttons {
+
+    display: flex;
+
+    gap: 20px;
+
 }
 
-h2 {
-    font-size: 36px;
+.primary,
+.secondary {
+
+    padding: 16px 32px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.7;
+.primary {
+
+    background: #38BDF8;
+
+    color: #0F172A;
+
+}
+
+.primary:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.secondary {
+
+    border: 2px solid white;
+
+    color: white;
+
+}
+
+.secondary:hover {
+
+    background: white;
+
+    color: #0F172A;
+
 }
