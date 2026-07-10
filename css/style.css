@@ -873,3 +873,53 @@ h2 {
         animation-iteration-count: 1 !important;
     }
 }
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    justify-content: center;
+    gap: 16px;
+    margin-top: 42px;
+}
+
+.contact-button {
+    width: 100%;
+    min-height: 56px;
+}
+
+.copy-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 28px;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+    color: var(--text-muted);
+
+    font: inherit;
+    font-size: 0.95rem;
+
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.copy-email:hover {
+    color: var(--primary);
+}
+
+.copy-label {
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+    .copy-email {
+        flex-wrap: wrap;
+    }
+}
